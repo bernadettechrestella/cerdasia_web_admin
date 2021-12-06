@@ -1,20 +1,17 @@
 <template>
     <div>
-        <v-row>
-            <v-col cols="11">
+        <v-row align="center" justify="center" class="pb-3">
                 <v-text-field
-                color="#FF5E3C"
-                label="Mau cari apa ?"
-                outlined
-                rounded
-                dense
-                clearable
-                height="30"
-                prepend-icon="mdi-magnify"
+                    color="#FF5E3C"
+                    label="Mau cari apa ?"
+                    outlined
+                    rounded
+                    dense
+                    clearable
+                    prepend-icon="mdi-magnify"
+                    class="pt-7"
                 ></v-text-field>
-            </v-col>
-            <v-col>
-                <v-row class="pt-3">
+                &emsp;
                     <v-icon
                     large
                     color="#FF5E3C">mdi-bell</v-icon>
@@ -23,8 +20,6 @@
                     color="#FF5E3C"
                     size="40">
                     </v-avatar>
-                </v-row>
-            </v-col>
         </v-row>
     </div>
 </template>

@@ -1,10 +1,14 @@
 <template>
-    <v-container fluid class="fill-height">
+    <v-container fluid class="fill-height" style="background-color: #FEFCE9">
         <v-row>
             <v-col cols="4">
-                <v-row>
-                    <v-col cols="12" class="pa-5">
+                    <!-- <v-col cols="12" class="pa-5"> -->
                         <!-- <center> -->
+                            <v-img
+                                src="../assets/cerdasia.png"
+                                width="150"
+                                >
+                            </v-img>
                             <v-card-title class="align-center justify-center text-h4">Sign In</v-card-title>
                                 <p class="text-center font-weight-light">Sign in to stay connected</p>
                                 <v-card-text class="font-weight-light">Email</v-card-text>
@@ -57,8 +61,7 @@
                                 <a @click="redirectSignUp()" class="text-center font-weight-light orange--text">Click here to sign up.</a>
                                 </v-row>
                         <!-- </center> -->
-                    </v-col>
-                </v-row>
+                    <!-- </v-col> -->
             </v-col>
 
                 <v-col cols="8" style="padding: 0px">
@@ -109,7 +112,7 @@ export default {
     name: 'SignIn',
     data () {
         return {
-            initHeight: window.innerHeight,
+            initHeight: (window.innerHeight)/2,
             initHeight2: (window.innerHeight)/4
         }
     },

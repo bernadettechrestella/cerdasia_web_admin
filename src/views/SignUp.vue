@@ -1,7 +1,12 @@
 <template>
-    <v-card flat color="#FEFCE9" height="auto">
+    <v-container fluid class="fill-height" style="background-color: #FEFCE9">
         <v-row>
-            <v-col cols="5" class="pa-5 ma-5">
+            <v-col cols="5">
+                <v-img
+                    src="../assets/cerdasia.png"
+                    width="150"
+                    >
+                </v-img>
                 <v-card-title class="align-center justify-center text-h4">Sign Up</v-card-title>
                 <p class="text-center font-weight-light">Create your account</p>
                 <v-row>
@@ -98,54 +103,58 @@
                 <a @click="redirectSignIn()" class="text-center font-weight-light orange--text">Click here to Sign In.</a>
                 </v-row>
             </v-col>
-            <v-col>
-                <v-card flat color="#FEFCE9">
+
+            <v-col cols="7" style="padding: 0px">
                     <v-img
                         src="../assets/lingkaran.svg"
-                        width="836"
-                        height="625"
+                        width="100%"
+                        :min-height="initHeight"
                         >
                 <v-row align="center" justify="center" class="pt-5 pl-15 mt-5 ml-15">
                     <v-col>
-                        <v-row>
-                            <v-col>
+                        <v-row class="pl-5 pr-12">
+                            <v-col cols="4">
                             <v-img
                                 src="../assets/singa.svg"
-                                width="250"
-                                height="250"
-                                contain>
+                                width="100%"
+                                :min-height="initHeight2">
                             </v-img>
                             </v-col>
-                            <v-col>
                             <v-spacer />
+                            <v-col cols="4">
                             <v-img
                                 src="../assets/cacing.svg"
-                                width="250"
-                                height="250"
-                                contain>
+                                width="100%"
+                                :min-height="initHeight2">
                             </v-img>
                             </v-col>
                         </v-row>
-                        <v-row>
+                        <v-row align="center" justify="center">
+                            <v-col cols="6">
                             <v-img
                                 src="../assets/gajah.svg"
-                                width="250"
-                                height="250"
-                                contain>
+                                width="100%"
+                                :min-height="initHeight2">
                             </v-img>
+                            </v-col>
                         </v-row>
                     </v-col>
                 </v-row>
                     </v-img>
-                </v-card>
             </v-col>
         </v-row>
-    </v-card>
+    </v-container>
 </template>
 
 <script>
 export default {
     name: 'SignUp',
+    data () {
+        return {
+            initHeight: (window.innerHeight)/2,
+            initHeight2: (window.innerHeight)/4
+        }
+    },
     methods: {
         redirectSignIn() {
           this.$router.push('/')
