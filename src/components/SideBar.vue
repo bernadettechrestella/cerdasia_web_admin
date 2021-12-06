@@ -1,16 +1,24 @@
 <template>
   <nav>
     <v-navigation-drawer
-      v-model="drawer" app
+      v-model="drawer"
+      :mini-variant.sync="mini"
+      permanent
+      app
       color="#FEFCE9">
-      <v-list rounded>
-        <v-row class="pt-6 pl-8 pr-8">
+      <v-list rounded nav dense>
+        <v-list-item>
+          <v-icon large color="brown">mdi-bird</v-icon>
+        <v-row class="pt-1 pl-4 pr-8">
           <v-img
             src="../assets/cerdasia.png"
             width="150"
-            height="70"            >
+            height="70"
+            contain
+            @click.stop="mini = !mini">
           </v-img>
         </v-row>
+        </v-list-item>
 
         <v-row v-for="(parent, i) in menu" :key="i">
           <v-col>
@@ -39,14 +47,16 @@
         </v-row>
       </v-list>
 
-      <v-list-item style="position: absolute; bottom:0" class="ml-3" flat>
+      <v-list rounded style="position: absolute; bottom:0" flat dense nav>
+        <v-list-item>  
           <v-list-item-icon>
             <v-icon color="deep-orange darken-4">mdi-logout</v-icon>
           </v-list-item-icon>
           <v-list-item-title>
             <a @click="redirectSignUp()" class="font-weight-bold black--text text-h7">Keluar</a>
           </v-list-item-title>
-      </v-list-item>
+        </v-list-item>
+      </v-list>
     </v-navigation-drawer>
   </nav>
 </template>
@@ -57,6 +67,7 @@
     data: () => ({
         menu : [],
         drawer: true,
+        mini: true,
         navigation: [
           {
             id : 3,
