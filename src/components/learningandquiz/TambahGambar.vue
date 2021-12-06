@@ -2,9 +2,9 @@
     <div>
         <h2 class="pb-3">Tambahkan Aset Gambar</h2>
         <v-card outlined>
-            <v-row class="ml-10 mr-10 pl-10 pr-10 pt-5 pb-5">
+            <v-row class="pa-5">
                 <v-col class="pl-5 pr-5">
-                    <v-card class="text-center" height="300" width="250">
+                    <v-card class="text-center" height="300" width="100%">
                         <v-file-input
                             class="justify-center"
                             accept="image/png, image/jpeg, image/bmp"
@@ -16,7 +16,7 @@
                     </v-card>
                 </v-col>
                 <v-col class="pl-5 pr-5">
-                    <v-card class="text-center" height="300" width="250">
+                    <v-card class="text-center" height="300" width="100%">
                         <v-file-input
                             class="justify-center"
                             accept="image/png, image/jpeg, image/bmp"
@@ -28,7 +28,7 @@
                     </v-card>
                 </v-col>
                 <v-col class="pl-5 pr-5">
-                    <v-card class="text-center" height="300" width="250">
+                    <v-card class="text-center" height="300" width="100%">
                         <v-file-input
                             class="justify-center"
                             accept="image/png, image/jpeg, image/bmp"

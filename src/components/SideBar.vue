@@ -8,7 +8,13 @@
       color="#FEFCE9">
       <v-list rounded nav dense>
         <v-list-item>
-          <v-icon large color="brown">mdi-bird</v-icon>
+          <v-img
+            src="../assets/singa.svg"
+            width="70"
+            height="70"
+            contain
+            @click.stop="mini = !mini">
+          </v-img>
         <v-row class="pt-1 pl-4 pr-8">
           <v-img
             src="../assets/cerdasia.png"
