@@ -1,7 +1,7 @@
 <template>
     <v-container fluid class="fill-height" style="background-color: #FEFCE9">
         <v-row>
-            <v-col cols="5">
+            <v-col cols="6" class="pl-10 pr-10">
                 <v-img
                     src="../assets/cerdasia.png"
                     width="150"
@@ -100,11 +100,11 @@
                 <v-row justify="center">
                 <p class="text-center font-weight-light">Already have an account?</p>
                 &emsp;
-                <a @click="redirectSignIn()" class="text-center font-weight-light orange--text">Click here to Sign In.</a>
+                <a @click="redirectSignIn()" class="text-center font-weight-light" style="color:#FF5E3C">Click here to Sign In.</a>
                 </v-row>
             </v-col>
 
-            <v-col cols="7" style="padding: 0px">
+            <v-col cols="6" style="padding: 0px">
                     <v-img
                         src="../assets/lingkaran.svg"
                         width="100%"

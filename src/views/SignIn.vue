@@ -1,7 +1,7 @@
 <template>
     <v-container fluid class="fill-height" style="background-color: #FEFCE9">
         <v-row>
-            <v-col cols="4">
+            <v-col cols="5" class="pl-10 pr-10">
                     <!-- <v-col cols="12" class="pa-5"> -->
                         <!-- <center> -->
                             <v-img
@@ -33,7 +33,7 @@
                                         hide-details
                                         ></v-checkbox>
                                     <v-spacer />
-                                    <a class="pt-5 orange--text">Forgot Password</a>
+                                    <a class="pt-5" style="color:#FF5E3C">Forgot Password</a>
                                 </v-row>
                                 <v-row justify="center" class="pb-10">
                                     <v-btn
@@ -58,13 +58,13 @@
                                 <v-row justify="center">
                                 <p class="text-center font-weight-light">Don't have an account?</p>
                                 &emsp;
-                                <a @click="redirectSignUp()" class="text-center font-weight-light orange--text">Click here to sign up.</a>
+                                <a @click="redirectSignUp()" class="text-center font-weight-light" style="color:#FF5E3C">Click here to sign up.</a>
                                 </v-row>
                         <!-- </center> -->
                     <!-- </v-col> -->
             </v-col>
 
-                <v-col cols="8" style="padding: 0px">
+                <v-col cols="7" style="padding: 0px">
                         <v-img
                         src="../assets/lingkaran.svg"
                         width="100%"

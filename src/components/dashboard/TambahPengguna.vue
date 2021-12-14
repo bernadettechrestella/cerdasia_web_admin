@@ -1,6 +1,6 @@
 <template>
     <div class="pt-5 mt-5">
-        <h3 class="pb-2">Tambahkan Pengguna Baru Cerdasia</h3>
+        <h2 class="pb-2">Tambahkan Pengguna Baru Cerdasia</h2>
         <v-row class="pt-4">
             <v-text-field
             rounded
@@ -41,6 +41,7 @@
                 class="white--text"
                 color="#FF5E3C">Tambahkan Pengguna Baru</v-btn>
         <!-- </v-col> -->
+
     </div>
 </template>
 

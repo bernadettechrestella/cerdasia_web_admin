@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-container class="pa-6" fluid
+    <v-container class="pl-10 pb-10 pr-10 pt-8" fluid
       style="background-color:white">
       <h1>Belajar Suku Kata 1</h1>
       <LevelQuiz />

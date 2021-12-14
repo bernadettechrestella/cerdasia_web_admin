@@ -6,6 +6,7 @@
                 :items="data"
                 :item-class="colorBackground"
                 class="elevation-1"
+                style="color:#FF5E3C"
             >
             <template v-slot:[`item.statusbelajar`]="{ item }">
                 <v-chip

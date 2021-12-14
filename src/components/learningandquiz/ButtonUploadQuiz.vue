@@ -6,7 +6,7 @@
                     rounded
                     color="#FF5E3C"
                     class="white--text"
-                    width="550">
+                    width="100%">
                         Upload Quiz
                 </v-btn>
             </v-col>
@@ -14,7 +14,7 @@
                 <v-btn
                     rounded
                     outlined
-                    width="550"
+                    width="100%"
                     class="orange--text">
                     <v-icon
                         color="#FF5E3C">

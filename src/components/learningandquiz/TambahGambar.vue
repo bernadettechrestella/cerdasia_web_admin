@@ -4,7 +4,7 @@
         <v-card outlined>
             <v-row class="pa-5">
                 <v-col class="pl-5 pr-5">
-                    <v-card class="text-center" height="300" width="100%">
+                    <v-card class="text-center" max-height="300" width="100%">
                         <v-file-input
                             class="justify-center"
                             accept="image/png, image/jpeg, image/bmp"
@@ -12,11 +12,11 @@
                             label="Input Gambar"
                             hide-input
                         ></v-file-input>
-                        <v-card-text class="orange--text">Input Gambar</v-card-text>
+                        <v-card-text style="color:#FF5E3C">Input Gambar</v-card-text>
                     </v-card>
                 </v-col>
                 <v-col class="pl-5 pr-5">
-                    <v-card class="text-center" height="300" width="100%">
+                    <v-card class="text-center" max-height="300" width="100%">
                         <v-file-input
                             class="justify-center"
                             accept="image/png, image/jpeg, image/bmp"
@@ -24,11 +24,11 @@
                             label="Input Gambar"
                             hide-input
                         ></v-file-input>
-                        <v-card-text class="orange--text">Input Gambar</v-card-text>
+                        <v-card-text style="color:#FF5E3C">Input Gambar</v-card-text>
                     </v-card>
                 </v-col>
                 <v-col class="pl-5 pr-5">
-                    <v-card class="text-center" height="300" width="100%">
+                    <v-card class="text-center" max-height="300" width="100%">
                         <v-file-input
                             class="justify-center"
                             accept="image/png, image/jpeg, image/bmp"
@@ -36,7 +36,7 @@
                             label="Input Gambar"
                             hide-input
                         ></v-file-input>
-                        <v-card-text class="orange--text">Input Gambar</v-card-text>
+                        <v-card-text style="color:#FF5E3C">Input Gambar</v-card-text>
                     </v-card>
                 </v-col>
             </v-row>

@@ -3,11 +3,12 @@
         <v-card color="#FEFCE9" class="pa-0">
           <v-row>
             <v-spacer />
-              <v-col cols="2" class="pr-4 mr-2">
+              <v-col cols="3" class="pr-4 mr-2">
                 <v-select
+                  rounded
                   v-model="select"
                   :items="items"
-                  height="15"
+                  placeholder="Jangka Waktu"
                 ></v-select>
               </v-col>
           </v-row>

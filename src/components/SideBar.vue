@@ -7,7 +7,7 @@
       app
       color="#FEFCE9">
       <v-list rounded nav dense>
-        <v-list-item>
+        <v-list-item class="pt-2 pb-5">
           <v-img
             src="../assets/singa.svg"
             width="70"
@@ -182,6 +182,16 @@
             route	:	"/QuizKalimat",
             parentNavigation_Id	:	2,
             iconClass	:	"mdi-message-cog-outline",
+            order	:	1,
+            visible	:	1,
+          },
+          {
+            id : 4,
+            type	:	1,
+            name	:	"Buku Cerita",
+            route	:	"/BukuCerita",
+            parentNavigation_Id	:	0,
+            iconClass	:	"mdi-book-open-variant",
             order	:	1,
             visible	:	1,
           },
