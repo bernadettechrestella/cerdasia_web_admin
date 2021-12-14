@@ -6,9 +6,11 @@
               <v-col cols="3" class="pr-4 mr-2">
                 <v-select
                   rounded
+                  outlined
                   v-model="select"
                   :items="items"
                   placeholder="Jangka Waktu"
+                  color="#FF5E3C"
                 ></v-select>
               </v-col>
           </v-row>
