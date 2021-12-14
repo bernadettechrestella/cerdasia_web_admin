@@ -10,19 +10,27 @@
         <v-list-item class="pt-2 pb-5">
           <v-img
             src="../assets/singa.svg"
-            width="70"
-            height="70"
+            width="40"
+            height="40"
             contain
             @click.stop="mini = !mini">
           </v-img>
         <v-row class="pt-1 pl-4 pr-8">
           <v-img
             src="../assets/cerdasia.png"
-            width="150"
+            width="120"
             height="70"
             contain
             @click.stop="mini = !mini">
           </v-img>
+        </v-row>
+        <v-row class="pl-4 pr-8">
+          <v-btn
+          icon
+          @click.stop="mini = !mini"
+          >
+          <v-icon>mdi-chevron-left</v-icon>
+          </v-btn>
         </v-row>
         </v-list-item>
 
@@ -33,14 +41,14 @@
                 <v-icon color="deep-orange darken-4">{{parent.Icon}}</v-icon>
               </v-list-item-icon>
               <v-list-item-title>
-                <h4 style="font-weight: regular">{{parent.Name}}</h4>
+                <h3 style="font-weight: regular">{{parent.Name}}</h3>
               </v-list-item-title>
             </v-list-item>
-            <v-list-group v-else no-action>
+            <v-list-group v-else no-action color="deep-orange darken-4">
               <v-icon slot="prependIcon" color="deep-orange darken-4">{{parent.Icon}}</v-icon>
                 <template v-slot:activator>
                   <v-list-item-title>
-                    <h4 class="black--text">{{parent.Name}}</h4>
+                    <h3 class="black--text">{{parent.Name}}</h3>
                   </v-list-item-title>
                 </template>
                 <v-list-item active-class="orange darken-3" color="white" link :to="sub.Route" v-for="(sub, i) in parent.SubMenu" :key="i">

@@ -93,9 +93,6 @@
   .style-2 {
     background-color: #FEFCE9
   }
-  h3 {
-    color: #FF5E3C;
-  }
   .data-table {
     color: #FF5E3C;
   }

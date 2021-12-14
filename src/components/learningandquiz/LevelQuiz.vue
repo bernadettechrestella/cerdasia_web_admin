@@ -16,9 +16,3 @@ export default {
     name: 'LevelQuiz'
 }
 </script>
-
-<style>
-    .h3 {
-        color: #FF5E3C;
-    }
-</style>

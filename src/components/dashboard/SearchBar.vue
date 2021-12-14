@@ -1,6 +1,8 @@
 <template>
-    <div>
-        <v-row class="pb-3">
+    <v-container fluid>
+        <v-row align="center" justify="center">
+            <v-col cols="11">
+                <v-row>
                 <v-text-field
                     color="#FF5E3C"
                     label="Mau cari apa ?"
@@ -11,14 +13,25 @@
                     prepend-inner-icon="mdi-magnify"
                     class="pt-3"
                 ></v-text-field>
-                &emsp;
+                </v-row>
+            </v-col>
+            &emsp;
+            <v-col>
+                <v-row style="margin-bottom: 0px;" align="center">
+                <v-btn
+                icon
+                >
                     <v-icon
                     color="#FF5E3C">mdi-bell</v-icon>
-                    &emsp;
+                </v-btn>
+                    <v-btn icon>
                     <v-icon
                     color="#FF5E3C">mdi-cog</v-icon>
+                    </v-btn>
+                </v-row>
+            </v-col>
         </v-row>
-    </div>
+    </v-container>
 </template>
 
 <script>
