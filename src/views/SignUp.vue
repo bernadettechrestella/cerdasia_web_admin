@@ -1,31 +1,35 @@
 <template>
     <v-container fluid class="fill-height" style="background-color: #FEFCE9">
         <v-row>
-            <v-col cols="6" class="pl-10 pr-10">
+            <v-col cols="6" class="pl-10 pr-10 pt-10">
+                <center>
                 <v-img
-                    src="../assets/cerdasia.png"
-                    width="150"
+                    src="../assets/tulisanCerdasia.svg"
+                    width="300"
                     >
                 </v-img>
-                <v-card-title class="align-center justify-center text-h4">Sign Up</v-card-title>
-                <p class="text-center font-weight-light">Create your account</p>
+                </center>
+                <v-card-title class="align-center justify-center text-h4">Daftar Akun</v-card-title>
+                <p class="text-center font-weight-light">Jika kamu belum punya akun</p>
                 <v-row>
                     <v-col>
-                        <v-card-text class="font-weight-light">First Name</v-card-text>
+                        <v-card-text class="font-weight-light">Nama Depan</v-card-text>
                         <v-text-field
                             outlined
                             rounded
                             required
                             color="#FF5E3C"
+                            dense
                         ></v-text-field>
                     </v-col>
                     <v-col>
-                        <v-card-text class="font-weight-light">Last Name</v-card-text>
+                        <v-card-text class="font-weight-light">Nama Belakang</v-card-text>
                         <v-text-field
                             outlined
                             rounded
                             required
                             color="#FF5E3C"
+                            dense
                         ></v-text-field>
                     </v-col>
                 </v-row>
@@ -37,41 +41,45 @@
                             rounded
                             required
                             color="#FF5E3C"
+                            dense
                         ></v-text-field>
                     </v-col>
                     <v-col>
-                        <v-card-text class="font-weight-light">Phone No.</v-card-text>
+                        <v-card-text class="font-weight-light">No. HP</v-card-text>
                         <v-text-field
                             outlined
                             rounded
                             required
                             color="#FF5E3C"
+                            dense
                         ></v-text-field>
                     </v-col>
                 </v-row>
                 <v-row>
                     <v-col>
-                    <v-card-text class="font-weight-light">Password</v-card-text>
+                    <v-card-text class="font-weight-light">Sandi</v-card-text>
                         <v-text-field
                             outlined
                             rounded
                             required
                             color="#FF5E3C"
+                            dense
                         ></v-text-field>
                     </v-col>
                     <v-col>
-                        <v-card-text class="font-weight-light">Confirm Password</v-card-text>
+                        <v-card-text class="font-weight-light">Konfirmasi Sandi</v-card-text>
                         <v-text-field
                             outlined
                             rounded
                             required
                             color="#FF5E3C"
+                            dense
                         ></v-text-field>
                     </v-col>
                 </v-row>
                 <v-row class="pb-5" justify="center">
                     <v-checkbox
-                        label="I agree with the terms of use"
+                        label="Saya setuju dengan aturan ini"
                         color="orange darken-3"
                         value="orange darken-3"
                         hide-details
@@ -84,10 +92,10 @@
                         class="white--text"
                         width="150"
                         to="/">
-                        Sign Up
+                        Daftar
                     </v-btn>
                 </v-row>
-                <p class="text-center font-weight-light">or sign up with other accounts?</p>
+                <p class="text-center font-weight-light">atau daftar dengan akun lain?</p>
                 <v-row justify="center" class="pt-3 pb-3">
                     <v-icon>mdi-google</v-icon>
                     &emsp;
@@ -98,9 +106,9 @@
                     <v-icon>mdi-linkedin</v-icon>
                 </v-row>
                 <v-row justify="center">
-                <p class="text-center font-weight-light">Already have an account?</p>
+                <p class="text-center font-weight-light">Punya akun?</p>
                 &emsp;
-                <a @click="redirectSignIn()" class="text-center font-weight-light" style="color:#FF5E3C">Click here to Sign In.</a>
+                <a @click="redirectSignIn()" class="text-center font-weight-light" style="color:#FF5E3C">Klik disini untuk masuk ke akun Anda.</a>
                 </v-row>
             </v-col>
 
@@ -110,29 +118,12 @@
                         width="100%"
                         :min-height="initHeight"
                         >
-                <v-row align="center" justify="center" class="pt-5 pl-15 mt-5 ml-15">
+                <v-row align="center" justify="center" class="pl-7 ml-15">
                     <v-col>
-                        <v-row class="pl-5 pr-12">
-                            <v-col cols="4">
-                            <v-img
-                                src="../assets/singa.svg"
-                                width="100%"
-                                :min-height="initHeight2">
-                            </v-img>
-                            </v-col>
-                            <v-spacer />
-                            <v-col cols="4">
-                            <v-img
-                                src="../assets/cacing.svg"
-                                width="100%"
-                                :min-height="initHeight2">
-                            </v-img>
-                            </v-col>
-                        </v-row>
                         <v-row align="center" justify="center">
-                            <v-col cols="6">
+                            <v-col>
                             <v-img
-                                src="../assets/gajah.svg"
+                                src="../assets/logoCerdasiaGajah.svg"
                                 width="100%"
                                 :min-height="initHeight2">
                             </v-img>
