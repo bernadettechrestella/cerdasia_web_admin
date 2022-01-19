@@ -1,16 +1,17 @@
 <template>
     <v-container fluid class="fill-height" style="background-color: #FEFCE9">
         <v-row>
-            <v-col cols="5" class="pl-10 pr-10">
+            <v-col cols="5" class="pl-10 pr-10 pt-10">
                     <!-- <v-col cols="12" class="pa-5"> -->
-                        <!-- <center> -->
+                        <center>
                             <v-img
-                                src="../assets/cerdasia.png"
-                                width="150"
+                                src="../assets/tulisanCerdasia.svg"
+                                width="300"
                                 >
                             </v-img>
-                            <v-card-title class="align-center justify-center text-h4">Sign In</v-card-title>
-                                <p class="text-center font-weight-light">Sign in to stay connected</p>
+                        </center>
+                            <v-card-title class="align-center justify-center text-h4">Masuk</v-card-title>
+                                <p class="text-center font-weight-light">Jika kamu sudah memiliki akun</p>
                                 <v-card-text class="font-weight-light">Email</v-card-text>
                                 <v-text-field
                                     outlined
@@ -18,7 +19,7 @@
                                     required
                                     color="#FF5E3C"
                                 ></v-text-field>
-                                <v-card-text class="font-weight-light">Password</v-card-text>
+                                <v-card-text class="font-weight-light">Sandi</v-card-text>
                                 <v-text-field
                                     outlined
                                     rounded
@@ -27,13 +28,13 @@
                                 ></v-text-field>
                                 <v-row class="pl-5 pr-5 pb-5">
                                     <v-checkbox
-                                        label="Remember Me ?"
+                                        label="Ingat Saya?"
                                         color="orange darken-3"
                                         value="orange darken-3"
                                         hide-details
                                         ></v-checkbox>
                                     <v-spacer />
-                                    <a class="pt-5" style="color:#FF5E3C">Forgot Password</a>
+                                    <a class="pt-5" style="color:#FF5E3C">Lupa Sandi</a>
                                 </v-row>
                                 <v-row justify="center" class="pb-10">
                                     <v-btn
@@ -42,10 +43,10 @@
                                         class="white--text"
                                         width="150"
                                         to="Home">
-                                        Sign In
+                                        Masuk
                                     </v-btn>
                                 </v-row>
-                                <p class="text-center font-weight-light">or sign in with other accounts?</p>
+                                <p class="text-center font-weight-light">atau masuk dengan akun lain?</p>
                                 <v-row justify="center" class="pt-3 pb-3">
                                     <v-icon>mdi-google</v-icon>
                                     &emsp;
@@ -56,11 +57,10 @@
                                     <v-icon>mdi-linkedin</v-icon>
                                 </v-row>
                                 <v-row justify="center">
-                                <p class="text-center font-weight-light">Don't have an account?</p>
+                                <p class="text-center font-weight-light">Belum punya akun?</p>
                                 &emsp;
-                                <a @click="redirectSignUp()" class="text-center font-weight-light" style="color:#FF5E3C">Click here to sign up.</a>
+                                <a @click="redirectSignUp()" class="text-center font-weight-light" style="color:#FF5E3C">Klik disini untuk daftar akun.</a>
                                 </v-row>
-                        <!-- </center> -->
                     <!-- </v-col> -->
             </v-col>
 
@@ -70,31 +70,13 @@
                         width="100%"
                         :min-height="initHeight"
                         >
-                            <v-row align="center" justify="center" class="pt-5 pl-15 mt-5 ml-15">
+                            <v-row align="center" justify="center" class="pl-15 ml-15">
                                 <v-col>
-                                    <v-row class="pl-5 pr-12">
-                                        <v-col cols="4">
+                                    <v-row>
+                                        <v-col>
                                         <v-img
-                                            src="../assets/singa.svg"
-                                            width="100%"
-                                            :min-height="initHeight2"
-                                            >
-                                        </v-img>
-                                        </v-col>
-                                        <v-spacer />
-                                        <v-col cols="4">
-                                        <v-img
-                                            src="../assets/cacing.svg"
-                                            width="100%"
-                                            :min-height="initHeight2">
-                                        </v-img>
-                                        </v-col>
-                                    </v-row>
-                                    <v-row align="center" justify="center">
-                                        <v-col cols="6">
-                                        <v-img
-                                            src="../assets/gajah.svg"
-                                            width="100%"
+                                            src="../assets/logoCerdasiaGajah.svg"
+                                            width="90%"
                                             :min-height="initHeight2">
                                         </v-img>
                                         </v-col>
