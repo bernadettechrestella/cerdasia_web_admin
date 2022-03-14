@@ -7,15 +7,27 @@
 </template>
 
 <script>
-
 export default {
-  name: 'App',
+  name: "App",
 
-  components: {
-  },
+  components: {},
 
   data: () => ({
     //
   }),
 };
 </script>
+
+<style>
+/* TODO : cari cara yang lebih efektif */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,500&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif !important;
+}
+
+html {
+  margin: 0 !important;
+}
+</style>

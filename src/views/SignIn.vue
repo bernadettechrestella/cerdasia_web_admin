@@ -1,113 +1,120 @@
 <template>
-    <v-container fluid class="fill-height" style="background-color: #FEFCE9">
-        <v-row>
-            <v-col cols="5" class="pl-10 pr-10 pt-10">
-                    <!-- <v-col cols="12" class="pa-5"> -->
-                        <center>
-                            <v-img
-                                src="../assets/tulisanCerdasia.svg"
-                                width="300"
-                                >
-                            </v-img>
-                        </center>
-                            <v-card-title class="align-center justify-center text-h4">Masuk</v-card-title>
-                                <p class="text-center font-weight-light">Jika kamu sudah memiliki akun</p>
-                                <v-card-text class="font-weight-light">Email</v-card-text>
-                                <v-text-field
-                                    outlined
-                                    rounded
-                                    required
-                                    color="#FF5E3C"
-                                ></v-text-field>
-                                <v-card-text class="font-weight-light">Sandi</v-card-text>
-                                <v-text-field
-                                    outlined
-                                    rounded
-                                    required
-                                    color="#FF5E3C"
-                                ></v-text-field>
-                                <v-row class="pl-5 pr-5 pb-5">
-                                    <v-checkbox
-                                        label="Ingat Saya?"
-                                        color="orange darken-3"
-                                        value="orange darken-3"
-                                        hide-details
-                                        ></v-checkbox>
-                                    <v-spacer />
-                                    <a class="pt-5" style="color:#FF5E3C">Lupa Sandi</a>
-                                </v-row>
-                                <v-row justify="center" class="pb-10">
-                                    <v-btn
-                                        rounded
-                                        color="#FF5E3C"
-                                        class="white--text"
-                                        width="150"
-                                        to="Home">
-                                        Masuk
-                                    </v-btn>
-                                </v-row>
-                                <p class="text-center font-weight-light">atau masuk dengan akun lain?</p>
-                                <v-row justify="center" class="pt-3 pb-3">
-                                    <v-icon>mdi-google</v-icon>
-                                    &emsp;
-                                    <v-icon>mdi-facebook</v-icon>
-                                    &emsp;
-                                    <v-icon>mdi-instagram</v-icon>
-                                    &emsp;
-                                    <v-icon>mdi-linkedin</v-icon>
-                                </v-row>
-                                <v-row justify="center">
-                                <p class="text-center font-weight-light">Belum punya akun?</p>
-                                &emsp;
-                                <a @click="redirectSignUp()" class="text-center font-weight-light" style="color:#FF5E3C">Klik disini untuk daftar akun.</a>
-                                </v-row>
-                    <!-- </v-col> -->
-            </v-col>
+  <v-container
+    fluid
+    class="fill-height"
+    style="background-color: #fefce9; padding: 0"
+  >
+    <v-row class="fill-height">
+      <!-- ilustasi (left-side) -->
+      <v-col class="fill-height" cols="7"> asdasd </v-col>
+      <!-- end of ilustrasi (left-side) -->
 
-                <v-col cols="7" style="padding: 0px">
-                        <v-img
-                        src="../assets/lingkaran.svg"
-                        width="100%"
-                        :min-height="initHeight"
-                        >
-                            <v-row align="center" justify="center" class="pl-15 ml-15">
-                                <v-col>
-                                    <v-row>
-                                        <v-col>
-                                        <v-img
-                                            src="../assets/logoCerdasiaGajah.svg"
-                                            width="90%"
-                                            :min-height="initHeight2">
-                                        </v-img>
-                                        </v-col>
-                                    </v-row>
-                                </v-col>
-                            </v-row>
-                        </v-img>
-                </v-col>
+      <!-- forn logn (right-side) -->
+      <v-col cols="5" class="pl-16 pr-16 pt-10 white fill-height">
+        <!-- logo cerdasia -->
+        <center>
+          <v-img src="../assets/tulisanCerdasia.svg" width="250"> </v-img>
+        </center>
+        <!-- end of logo cerdasia -->
+        <center class="mt-6">
+          <h5 class="align-center justify-center text-h5 font-weight-bold">
+            Masuk Akun
+          </h5>
+          <p class="text-center font-weight-light">
+            Jika kamu sudah memiliki akun
+          </p>
+        </center>
+
+        <!-- input email -->
+        <v-card-text style="padding: 4px" class="font-weight-bold"
+          >Email</v-card-text
+        >
+        <v-text-field
+          placeholder="Masukan email Anda yang aktif"
+          outlined
+          rounded
+          required
+          color="#FF5E3C"
+        ></v-text-field>
+        <!-- end of input email -->
+
+        <!-- input password -->
+        <v-card-text style="padding: 4px" class="font-weight-bold"
+          >Sandi</v-card-text
+        >
+        <v-text-field
+          placeholder="Minimal 8 karakter"
+          outlined
+          rounded
+          required
+          color="#FF5E3C"
+        ></v-text-field>
+        <!-- end of input password -->
+
+        <!-- checkbox -->
+        <v-row class="pl-5 pr-5 pb-5">
+          <v-checkbox
+            label="Ingat Saya?"
+            color="orange darken-3"
+            value="orange darken-3"
+            hide-details
+          ></v-checkbox>
+          <v-spacer />
+          <a class="pt-5" style="color: #ff5e3c">Lupa Password</a>
         </v-row>
-    </v-container>
+        <!-- end of checkbox -->
+
+        <!-- button masuk -->
+        <v-row justify="center" class="pb-10 mt-6">
+          <v-btn
+            rounded
+            color="#FF5E3C"
+            class="white--text text-capitalize py-6"
+            width="90%"
+            to="Home"
+          >
+            Masuk
+          </v-btn>
+        </v-row>
+        <!-- end of button masuk -->
+
+        <!-- go to sign up -->
+        <v-row justify="center">
+          <p class="text-center font-weight-light">Belum punya akun?</p>
+          &emsp;
+          <a
+            @click="redirectSignUp()"
+            class="text-center font-weight-light"
+            style="color: #ff5e3c"
+            >Klik disini untuk daftar akun.</a
+          >
+        </v-row>
+        <!-- end of go to sign up -->
+      </v-col>
+      <!-- end of forn logn (right-side) -->
+    </v-row>
+  </v-container>
 </template>
 
 <script>
 export default {
-    name: 'SignIn',
-    data () {
-        return {
-            initHeight: (window.innerHeight)/2,
-            initHeight2: (window.innerHeight)/4
-        }
+  name: "SignIn",
+  data() {
+    return {
+      initHeight: window.innerHeight / 2,
+      initHeight2: window.innerHeight / 4,
+    };
+  },
+  methods: {
+    redirectSignUp() {
+      this.$router.push("/SignUp");
     },
-    methods: {
-        redirectSignUp() {
-          this.$router.push('/SignUp')
-        }
-    }
-}
+  },
+};
 </script>
 
 <style>
-  .style-1 {
-    background-color: #FEFCE9
-  }
+.style-1 {
+  background-color: #fefce9;
+}
 </style>
