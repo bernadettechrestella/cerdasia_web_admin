@@ -1,12 +1,12 @@
 <template>
-  <v-container
-    fluid
-    class="fill-height"
-    style="background-color: #fefce9; padding: 0"
-  >
-    <v-row class="fill-height">
+  <v-container fluid class="fill-height amber" style="padding: 0">
+    <v-row align="center" justify="center" class="fill-height">
       <!-- ilustasi (left-side) -->
-      <v-col class="fill-height" cols="7"> asdasd </v-col>
+      <v-row align="center" justify="center" class="fill-height" cols="7">
+        <center>
+          <v-img src="../assets/logoCerdasiaGajah.svg" width="60%"> </v-img>
+        </center>
+      </v-row>
       <!-- end of ilustrasi (left-side) -->
 
       <!-- forn logn (right-side) -->
