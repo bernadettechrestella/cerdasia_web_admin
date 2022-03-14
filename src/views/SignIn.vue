@@ -4,7 +4,9 @@
       <!-- ilustasi (left-side) -->
       <v-row align="center" justify="center" class="fill-height" cols="7">
         <center>
-          <v-img src="../assets/logoCerdasiaGajah.svg" width="60%"> </v-img>
+          <v-img src="../assets/login/bubble.svg" width="70%"> </v-img>
+          <v-img src="../assets/logoCerdasiaGajah.svg" width="55%"> </v-img>
+          <v-img src="../assets/login/bubble.svg" width="70%"> </v-img>
         </center>
       </v-row>
       <!-- end of ilustrasi (left-side) -->
@@ -17,7 +19,7 @@
         </center>
         <!-- end of logo cerdasia -->
         <center class="mt-6">
-          <h5 class="align-center justify-center text-h5 font-weight-bold">
+          <h5 class="align-center justify-center text-h5 font-weight-black">
             Masuk Akun
           </h5>
           <p class="text-center font-weight-light">
