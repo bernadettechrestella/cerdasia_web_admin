@@ -11,7 +11,7 @@
       </v-row>
       <!-- end of ilustrasi (left-side) -->
 
-      <!-- forn logn (right-side) -->
+      <!-- forn login (right-side) -->
       <v-col cols="5" class="pl-16 pr-16 pt-10 white fill-height">
         <!-- logo cerdasia -->
         <center>
@@ -42,13 +42,14 @@
 
         <!-- input password -->
         <v-card-text style="padding: 4px" class="font-weight-bold"
-          >Sandi</v-card-text
+          >Password</v-card-text
         >
         <v-text-field
           placeholder="Minimal 8 karakter"
           outlined
           rounded
           required
+          type="password"
           color="#FF5E3C"
         ></v-text-field>
         <!-- end of input password -->
@@ -93,7 +94,7 @@
         </v-row>
         <!-- end of go to sign up -->
       </v-col>
-      <!-- end of forn logn (right-side) -->
+      <!-- end of forn login (right-side) -->
     </v-row>
   </v-container>
 </template>
