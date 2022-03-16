@@ -1,128 +1,134 @@
 <template>
-    <div>
-        <v-card color="#FEFCE9" class="pa-0">
-          <v-row>
-            <v-spacer />
-              <v-col cols="3" class="pr-4 mr-2">
-                <v-select
-                  rounded
-                  outlined
-                  v-model="select"
-                  :items="items"
-                  placeholder="Jangka Waktu"
-                  color="#FF5E3C"
-                ></v-select>
-              </v-col>
-          </v-row>
-          <v-row class="pl-10">
-            <v-col>
-              <h2>Performance Pelajaran</h2>
-            </v-col>
-            <v-col>
-              <h2>Performance Quiz</h2>
-            </v-col>
-          </v-row>
+  <div>
+    <v-row>
+      <h4 class="mt-9 font-weight-medium">Periode</h4>
+      <v-col cols="3" class="pr-4 mr-2">
+        <v-select
+          rounded
+          height="40"
+          color="#FF5E3C"
+          background-color="#ffffff"
+          v-model="select"
+          :items="items"
+          placeholder="Jangka Waktu"
+        ></v-select>
+      </v-col>
+    </v-row>
 
+    <v-row>
+      <v-col cols="6">
+        <h2 class="mb-8 black--text">Perfomance Pelajaran</h2>
+        <v-card color="#FFFFFF" class="mx-auto pb-10 pt-10 elevation-0">
           <v-row>
-            <v-col>
-                <vc-donut
-                  background = "#FEFCE9"
-                  foreground = "grey"
-                  :size = "250"
-                  unit = "px"
-                  :thickness = "30"
-                  hasLegend
-                  legendPlacement = "right"
-                  :sections = "sections"
-                  >50%</vc-donut>
-            </v-col>
-
             <v-col>
               <!-- <apexchart type="donut" width="380" :options="chartOptions" :series="series"></apexchart> -->
               <vc-donut
-                  background = "#FEFCE9"
-                  foreground = "grey"
-                  :size = "250"
-                  unit = "px"
-                  :thickness = "30"
-                  hasLegend
-                  legendPlacement = "right"
-                  :sections = "sections"
-                  >50%</vc-donut>
+                foreground="grey"
+                :size="250"
+                unit="px"
+                :thickness="30"
+                hasLegend
+                legendPlacement="bottom"
+                :sections="sections"
+                ><h1 class="deep-orange--text">50%</h1></vc-donut
+              >
             </v-col>
           </v-row>
-
         </v-card>
-    </div>
+      </v-col>
+
+      <v-col cols="6">
+        <h2 class="mb-8 black--text">Perfomance Pelajaran</h2>
+        <v-card color="#FFFFFF" class="mx-auto pb-10 pt-10 elevation-0">
+          <v-row>
+            <v-col>
+              <!-- <apexchart type="donut" width="380" :options="chartOptions" :series="series"></apexchart> -->
+              <vc-donut
+                foreground="grey"
+                :size="250"
+                unit="px"
+                :thickness="30"
+                hasLegend
+                legendPlacement="bottom"
+                :sections="sections"
+                ><h1 class="deep-orange--text">50%</h1></vc-donut
+              >
+            </v-col>
+          </v-row>
+        </v-card>
+      </v-col>
+    </v-row>
+  </div>
 </template>
 
 <script>
 // import VueApexCharts from 'vue-apexcharts'
 
 export default {
-  name: 'Performance',
+  name: "Performance",
   components: {
     // apexchart: VueApexCharts
   },
   data: () => ({
-        value: 95,
-        drawer: true,
-        items: [
-          [ 'Hari Ini' ],
-          [ 'Minggu Ini' ],
-          [ 'Bulan Ini' ],
-          [ 'Tahun Ini' ],
-        ],
-        sections: [
-          { label: 'Suku Kata 1', value: 25, color: 'blue'},
-          { label: 'Alfabet', value: 25, color: 'orange'},
-          { label: 'Suku Kata 2', value: 25, color: 'yellow'},
-          { label: 'Kalimat', value: 25, color: 'red'},
-        ],
-        series: [44, 55, 41, 17, 15],
-          chartOptions: {
+    value: 95,
+    drawer: true,
+    items: [["Hari Ini"], ["Minggu Ini"], ["Bulan Ini"], ["Tahun Ini"]],
+    sections: [
+      { label: "Suku Kata 1", value: 25, color: "#3762F0" },
+      { label: "Alfabet", value: 25, color: "#EA6A12" },
+      { label: "Suku Kata 2", value: 25, color: "#FAB400" },
+      { label: "Kalimat", value: 25, color: "#FF3D00" },
+    ],
+    series: [44, 55, 41, 17, 15],
+    chartOptions: {
+      chart: {
+        width: 380,
+        type: "donut",
+      },
+      plotOptions: {
+        pie: {
+          startAngle: -90,
+          endAngle: 270,
+        },
+      },
+      dataLabels: {
+        enabled: false,
+      },
+      fill: {
+        type: "gradient",
+      },
+      legend: {
+        formatter: function (val, opts) {
+          return val + " - " + opts.w.globals.series[opts.seriesIndex];
+        },
+      },
+      // title: {
+      //   text: 'Gradient Donut with custom Start-angle'
+      // },
+      responsive: [
+        {
+          breakpoint: 480,
+          options: {
             chart: {
-              width: 380,
-              type: 'donut',
-            },
-            plotOptions: {
-              pie: {
-                startAngle: -90,
-                endAngle: 270
-              }
-            },
-            dataLabels: {
-              enabled: false
-            },
-            fill: {
-              type: 'gradient',
+              width: 200,
             },
             legend: {
-              formatter: function(val, opts) {
-                return val + " - " + opts.w.globals.series[opts.seriesIndex]
-              }
+              position: "bottom",
             },
-            // title: {
-            //   text: 'Gradient Donut with custom Start-angle'
-            // },
-            responsive: [{
-              breakpoint: 480,
-              options: {
-                chart: {
-                  width: 200
-                },
-                legend: {
-                  position: 'bottom'
-                }
-              }
-            }]
           },
-      }),
-    };
+        },
+      ],
+    },
+  }),
+};
 </script>
 
 <style>
-  h2 {
-    color: #FF5E3C;
-  }
+.cdc-legend {
+  width: 70%;
+}
+
+h2 {
+  color: #ff5e3c;
+}
 </style>
