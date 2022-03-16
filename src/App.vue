@@ -30,4 +30,9 @@ export default {
 html {
   margin: 0 !important;
 }
+
+.v-list-item-group .v-list-item--active .v-list-item__icon .v-application {
+  color: white !important;
+  caret-color: white !important;
+}
 </style>
