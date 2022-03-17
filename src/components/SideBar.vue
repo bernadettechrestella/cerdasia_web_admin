@@ -22,7 +22,7 @@
         <v-row v-for="(parent, i) in menu" :key="i">
           <v-col>
             <v-list-item
-              active-class="deep-orange"
+              active-class="deep-orange rounded-lg"
               color="white"
               v-if="parent.SubMenu.length == 0"
               link
@@ -45,7 +45,7 @@
                 </v-list-item-title>
               </template>
               <v-list-item
-                active-class="deep-orange"
+                active-class="deep-orange rounded-lg"
                 color="white"
                 link
                 :to="sub.Route"

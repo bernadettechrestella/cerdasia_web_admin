@@ -1,7 +1,6 @@
 <template>
-  <div class="pt-5 mt-5">
+  <div class="pt-5 mt-14">
     <h2 class="mb-8 black--text">List Pelajaran</h2>
-
     <!-- list pelajaran -->
     <v-row class="white rounded">
       <!-- card  -->
