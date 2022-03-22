@@ -25,6 +25,21 @@ const routes = [
         component: () => import("../views/list pelajaran/Pemula.vue"),
       },
       {
+        path: "/list-pelajaran/mahir",
+        name: "list pelajaran-mahir",
+        component: () => import("../views/list pelajaran/Mahir.vue"),
+      },
+      {
+        path: "/list-pelajaran/cakap",
+        name: "list pelajaran-cakap",
+        component: () => import("../views/list pelajaran/Cakap.vue"),
+      },
+      {
+        path: "/list-pelajaran/terampil",
+        name: "list pelajaran-terampil",
+        component: () => import("../views/list pelajaran/Terampil.vue"),
+      },
+      {
         path: "/LearningAlfabet",
         name: "LearningAlfabet",
         component: () => import("../views/LearningAlfabet.vue"),
