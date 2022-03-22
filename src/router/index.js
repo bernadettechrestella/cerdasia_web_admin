@@ -1,81 +1,86 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import SignIn from '../views/SignIn.vue'
-import Home from '../views/MainView.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import SignIn from "../views/SignIn.vue";
+import Home from "../views/MainView.vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/Home',
-    name: 'Home',
+    path: "/Home",
+    name: "Home",
     component: Home,
     meta: {
-      requiresAuth: true
+      requiresAuth: true,
     },
     children: [
       {
-        path: '/Dashboard',
-        name: 'Dashboard',
-        component: () => import('../views/Dashboard.vue')
+        path: "/Dashboard",
+        name: "Dashboard",
+        component: () => import("../views/Dashboard.vue"),
       },
       {
-        path: '/LearningAlfabet',
-        name: 'LearningAlfabet',
-        component: () => import('../views/LearningAlfabet.vue')
+        path: "/list-pelajaran/pemula",
+        name: "list pelajaran-pemula",
+        component: () => import("../views/list pelajaran/Pemula.vue"),
       },
       {
-        path: '/LearningSukuKata1',
-        name: 'LearningSukuKata1',
-        component: () => import('../views/LearningSukuKata1.vue')
+        path: "/LearningAlfabet",
+        name: "LearningAlfabet",
+        component: () => import("../views/LearningAlfabet.vue"),
       },
       {
-        path: '/LearningSukuKata2',
-        name: 'LearningSukuKata2',
-        component: () => import('../views/LearningSukuKata2.vue')
+        path: "/LearningSukuKata1",
+        name: "LearningSukuKata1",
+        component: () => import("../views/LearningSukuKata1.vue"),
       },
       {
-        path: '/LearningKalimat',
-        name: 'LearningKalimat',
-        component: () => import('../views/LearningKalimat.vue')
+        path: "/LearningSukuKata2",
+        name: "LearningSukuKata2",
+        component: () => import("../views/LearningSukuKata2.vue"),
       },
       {
-        path: '/QuizAlfabet',
-        name: 'QuizAlfabet',
-        component: () => import('../views/QuizAlfabet.vue')
+        path: "/LearningKalimat",
+        name: "LearningKalimat",
+        component: () => import("../views/LearningKalimat.vue"),
       },
       {
-        path: '/QuizKalimat',
-        name: 'QuizKalimat',
-        component: () => import('../views/QuizKalimat.vue')
+        path: "/QuizAlfabet",
+        name: "QuizAlfabet",
+        component: () => import("../views/QuizAlfabet.vue"),
       },
       {
-        path: '/QuizSukuKata1',
-        name: 'QuizSukuKata1',
-        component: () => import('../views/QuizSukuKata1.vue')
+        path: "/QuizKalimat",
+        name: "QuizKalimat",
+        component: () => import("../views/QuizKalimat.vue"),
       },
       {
-        path: '/QuizSukuKata2',
-        name: 'QuizSukuKata2',
-        component: () => import('../views/QuizSukuKata2.vue')
+        path: "/QuizSukuKata1",
+        name: "QuizSukuKata1",
+        component: () => import("../views/QuizSukuKata1.vue"),
       },
-    ]
+      {
+        path: "/QuizSukuKata2",
+        name: "QuizSukuKata2",
+        component: () => import("../views/QuizSukuKata2.vue"),
+      },
+    ],
   },
   {
-    path: '/',
-    name: 'SignIn',
-    component: SignIn
+    path: "/",
+    name: "SignIn",
+    component: SignIn,
   },
   {
-    path: '/SignUp',
-    name: 'SignUp',
-    component: () => import('../views/SignUp.vue')
+    path: "/SignUp",
+    name: "SignUp",
+    component: () => import("../views/SignUp.vue"),
   },
-]
+];
 
 const router = new VueRouter({
-  routes
-})
+  routes,
+});
 
 // router.beforeEach((to, from, next) => {
 //   if (to.matched.some(record => record.meta.requiresAuth)) {
@@ -89,4 +94,4 @@ const router = new VueRouter({
 //   }
 // })
 
-export default router
+export default router;
