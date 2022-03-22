@@ -4,6 +4,8 @@
     <v-row class="mx-12 my-12">
       <!-- left arrow -->
       <svg
+        style="cursor: pointer"
+        @click="back"
         width="52"
         height="52"
         viewBox="0 0 52 52"
@@ -168,6 +170,12 @@
 export default {
   data() {
     return {};
+  },
+
+  methods: {
+    back() {
+      this.$router.go(-1);
+    },
   },
 };
 </script>
