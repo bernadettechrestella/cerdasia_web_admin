@@ -369,6 +369,10 @@ tr {
   border-radius: 20px;
 }
 
+tr th {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+}
+
 td {
   border-spacing: 20px 20px;
   padding: 14px;

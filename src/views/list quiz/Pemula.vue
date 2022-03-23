@@ -377,6 +377,10 @@ td {
   background-color: rgba(255, 234, 216, 0.5);
 }
 
+tr th {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+}
+
 td:first-child {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
