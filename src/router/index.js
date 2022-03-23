@@ -40,6 +40,11 @@ const routes = [
         component: () => import("../views/list pelajaran/Terampil.vue"),
       },
       {
+        path: "/list-quiz/pemula",
+        name: "list quiz-pemula",
+        component: () => import("../views/list quiz/Pemula.vue"),
+      },
+      {
         path: "/LearningAlfabet",
         name: "LearningAlfabet",
         component: () => import("../views/LearningAlfabet.vue"),

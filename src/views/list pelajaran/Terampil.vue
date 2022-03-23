@@ -44,7 +44,7 @@
       <div class="ml-16 pb-12 white box-table" style="width: 564px">
         <table>
           <!-- judul tabel -->
-          <tr height="40px" class="deep-orange--text">
+          <tr height="40px" class="deep-orange--text text-left">
             <th width="100px">Level</th>
             <th width="200px">Aset Gambar</th>
             <th width="300px">Aset Suara</th>
@@ -52,29 +52,19 @@
           <!-- end of judul tabel -->
 
           <!-- isi tabel -->
-          <tr class="text-center">
+          <tr class="text-left">
             <td>1</td>
             <td>image1.png</td>
             <td>voice1.mp4</td>
           </tr>
 
-          <tr class="text-center">
+          <tr class="text-left">
             <td>2</td>
             <td>image1.png</td>
             <td>voice4.mp4</td>
           </tr>
 
-          <tr class="text-center">
-            <td>3</td>
-            <td>image1.png</td>
-            <td>voice1.mp4</td>
-          </tr>
-          <tr class="text-center">
-            <td>3</td>
-            <td>image1.png</td>
-            <td>voice1.mp4</td>
-          </tr>
-          <tr class="text-center">
+          <tr class="text-left">
             <td>3</td>
             <td>image1.png</td>
             <td>voice1.mp4</td>
@@ -208,7 +198,7 @@ tr {
 
 td {
   border-spacing: 20px 20px;
-  padding: 16px;
+  padding: 14px;
   background-color: rgba(253, 249, 211, 0.5);
 }
 
