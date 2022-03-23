@@ -21,11 +21,13 @@
             <!-- kategori card -->
             <h3 style="font-size: 22px" class="">Pemula</h3>
             <p>(Alfabet)</p>
-            <v-btn
-              color="#FF5E3C"
-              class="white--text caption text-capitalize elevation-0 px-8"
-              rounded
-              >Lihat detail</v-btn
+            <router-link to="/list-quiz/pemula"
+              ><v-btn
+                color="#FF5E3C"
+                class="white--text caption text-capitalize elevation-0 px-8"
+                rounded
+                >Lihat detail</v-btn
+              ></router-link
             >
           </center>
         </v-card>
@@ -50,11 +52,13 @@
             <!-- kategori card -->
             <h3 style="font-size: 22px" class="">Mahir</h3>
             <p>(Suku kata)</p>
-            <v-btn
-              color="#FF5E3C"
-              class="white--text caption text-capitalize elevation-0 px-8"
-              rounded
-              >Lihat detail</v-btn
+            <router-link to="/list-quiz/mahir"
+              ><v-btn
+                color="#FF5E3C"
+                class="white--text caption text-capitalize elevation-0 px-8"
+                rounded
+                >Lihat detail</v-btn
+              ></router-link
             >
           </center>
         </v-card>
@@ -79,11 +83,13 @@
             <!-- kategori card -->
             <h3 style="font-size: 22px" class="">Cakap</h3>
             <p>(Kata)</p>
-            <v-btn
-              color="#FF5E3C"
-              class="white--text caption text-capitalize elevation-0 px-8"
-              rounded
-              >Lihat detail</v-btn
+            <router-link to="/list-quiz/cakap"
+              ><v-btn
+                color="#FF5E3C"
+                class="white--text caption text-capitalize elevation-0 px-8"
+                rounded
+                >Lihat detail</v-btn
+              ></router-link
             >
           </center>
         </v-card>
@@ -108,11 +114,13 @@
             <!-- kategori card -->
             <h3 style="font-size: 22px" class="">Terampil</h3>
             <p>(Kalimat)</p>
-            <v-btn
-              color="#FF5E3C"
-              class="white--text caption text-capitalize elevation-0 px-8"
-              rounded
-              >Lihat detail</v-btn
+            <router-link to="/list-quiz/terampil"
+              ><v-btn
+                color="#FF5E3C"
+                class="white--text caption text-capitalize elevation-0 px-8"
+                rounded
+                >Lihat detail</v-btn
+              ></router-link
             >
           </center>
         </v-card>

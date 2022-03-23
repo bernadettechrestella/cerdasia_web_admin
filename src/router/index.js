@@ -45,6 +45,21 @@ const routes = [
         component: () => import("../views/list quiz/Pemula.vue"),
       },
       {
+        path: "/list-quiz/mahir",
+        name: "list quiz-mahir",
+        component: () => import("../views/list quiz/Mahir.vue"),
+      },
+      {
+        path: "/list-quiz/cakap",
+        name: "list quiz-cakap",
+        component: () => import("../views/list quiz/Cakap.vue"),
+      },
+      {
+        path: "/list-quiz/terampil",
+        name: "list quiz-terampil",
+        component: () => import("../views/list quiz/Terampil.vue"),
+      },
+      {
         path: "/LearningAlfabet",
         name: "LearningAlfabet",
         component: () => import("../views/LearningAlfabet.vue"),
