@@ -170,23 +170,14 @@ export default {
       {
         id: 0,
         type: 2,
-        name: "Suku Kata 1",
-        route: "/QuizSukuKata1",
+        name: "Suku Kata",
+        route: "/QuizSukuKata",
         parentNavigation_Id: 2,
         iconClass: "mdi-message-cog-outline",
         order: 1,
         visible: 1,
       },
-      {
-        id: 0,
-        type: 2,
-        name: "Suku Kata 2",
-        route: "/QuizSukuKata2",
-        parentNavigation_Id: 2,
-        iconClass: "mdi-message-cog-outline",
-        order: 1,
-        visible: 1,
-      },
+
       {
         id: 0,
         type: 2,

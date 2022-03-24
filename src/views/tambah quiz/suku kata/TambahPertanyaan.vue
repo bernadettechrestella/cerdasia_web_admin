@@ -39,7 +39,7 @@
 
         <div class="ml-8">
           <h2 class="black--text">Tambah Pertanyaan Quiz</h2>
-          <h3 class="font-weight-regular">Pemula (Alfabet)</h3>
+          <h3 class="font-weight-regular">Mahir (Suku Kata)</h3>
         </div>
       </v-row>
       <!-- end of title -->

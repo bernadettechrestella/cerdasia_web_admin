@@ -32,7 +32,6 @@
         </svg>
 
         <!-- end of left arrow -->
-
         <div class="ml-8">
           <h2 class="black--text">Tambah Pertanyaan Quiz</h2>
           <h3 class="font-weight-regular">Mahir (Suku Kata)</h3>
@@ -87,7 +86,7 @@
         >
         </v-select>
         <!-- end of tipe pertanyaan -->
-        <router-link to="/QuizAlfabet/pertanyaan">
+        <router-link to="/QuizSukuKata/pertanyaan">
           <v-btn
             width="400"
             rounded

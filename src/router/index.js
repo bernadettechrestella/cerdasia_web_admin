@@ -91,19 +91,15 @@ const routes = [
           import("../views/tambah quiz/alfabet/TambahPertanyaan"),
       },
       {
-        path: "/QuizKalimat",
-        name: "QuizKalimat",
-        component: () => import("../views/QuizKalimat.vue"),
+        path: "/QuizSukuKata",
+        name: "QuizSukuKata",
+        component: () => import("../views/tambah quiz/suku kata/QuizSukuKata"),
       },
       {
-        path: "/QuizSukuKata1",
-        name: "QuizSukuKata1",
-        component: () => import("../views/QuizSukuKata1.vue"),
-      },
-      {
-        path: "/QuizSukuKata2",
-        name: "QuizSukuKata2",
-        component: () => import("../views/QuizSukuKata2.vue"),
+        path: "/QuizSukuKata/pertanyaan",
+        name: "QuizSukuKata",
+        component: () =>
+          import("../views/tambah quiz/suku kata/TambahPertanyaan"),
       },
     ],
   },
