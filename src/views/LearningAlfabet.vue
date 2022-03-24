@@ -3,7 +3,7 @@
     <v-container
       class="pl-10 pb-10 pr-10 pt-8"
       fluid
-      style="background-color: white"
+      style="background-color: #f9f7f7"
     >
       <!-- title -->
       <v-row class="mx-2 my-4">
@@ -66,6 +66,7 @@
           >Tambahkan Aset Gambar</v-card-text
         >
         <v-file-input
+          background-color="white"
           prepend-icon=""
           class="justify-center"
           accept="image/*"
@@ -82,6 +83,7 @@
           >Tambahkan Aset Suara</v-card-text
         >
         <v-file-input
+          background-color="white"
           prepend-icon=""
           class="justify-center"
           accept="audio/*"

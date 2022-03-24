@@ -3,7 +3,7 @@
     <v-container
       class="pl-10 pb-10 pr-10 pt-8"
       fluid
-      style="background-color: white"
+      style="background-color: #f9f7f7"
     >
       <!-- title -->
       <v-row class="mx-2 my-4">
@@ -39,7 +39,7 @@
 
         <div class="ml-8">
           <h2 class="black--text">Tambah Pelajaran</h2>
-          <h3 class="font-weight-regular">Cakap (Learning Kata)</h3>
+          <h3 class="font-weight-regular">Cakap (Kata)</h3>
         </div>
       </v-row>
       <!-- end of title -->
@@ -66,6 +66,7 @@
           >Tambahkan Aset Gambar</v-card-text
         >
         <v-file-input
+          background-color="white"
           prepend-icon=""
           class="justify-center"
           accept="image/*"
@@ -82,6 +83,7 @@
           >Tambahkan Aset Suara</v-card-text
         >
         <v-file-input
+          background-color="white"
           prepend-icon=""
           class="justify-center"
           accept="audio/*"

@@ -1,10 +1,6 @@
 <template>
-  <v-app>
-    <v-container
-      class="pl-10 pb-10 pr-10 pt-8"
-      fluid
-      style="background-color: #f9f7f7"
-    >
+  <v-app style="background-color: #f9f7f7">
+    <v-container class="pl-10 pb-10 pr-10 pt-8" fluid>
       <!-- title -->
       <v-row class="mx-2 my-4">
         <!-- left arrow -->
@@ -38,7 +34,7 @@
         <!-- end of left arrow -->
 
         <div class="ml-8">
-          <h2 class="black--text">Tambah Pelajaran</h2>
+          <h2 class="black--text">Tambah Pertanyaan Quiz</h2>
           <h3 class="font-weight-regular">Mahir (Suku Kata)</h3>
         </div>
       </v-row>
@@ -46,6 +42,21 @@
 
       <!-- form -->
       <div class="mt-8">
+        <!-- id quiz -->
+        <v-card-text style="padding: 2px" class="font-weight-bold subtitle-1"
+          >ID</v-card-text
+        >
+        <v-text-field
+          placeholder="Masukan ID quiz"
+          outlined
+          background-color="white"
+          rounded
+          required
+          color="#FF5E3C"
+        >
+        </v-text-field>
+        <!-- end of id quiz -->
+
         <!-- level pelajaran -->
         <v-card-text style="padding: 2px" class="font-weight-bold subtitle-1"
           >Level Pelajaran</v-card-text
@@ -61,46 +72,29 @@
         </v-text-field>
         <!-- end of level pelajaran -->
 
-        <!-- aset gambar -->
+        <!-- tipe pertanyaan -->
         <v-card-text style="padding: 2px" class="font-weight-bold subtitle-1"
-          >Tambahkan Aset Gambar</v-card-text
+          >Tipe Pertanyaan</v-card-text
         >
-        <v-file-input
-          background-color="white"
-          prepend-icon=""
-          class="justify-center"
-          accept="image/*"
-          prepend-inner-icon="mdi-cloud-upload"
-          placeholder="Upload aset gambar ( ekstensi .jpg / .png maks 2 MB )"
-          rounded
+        <v-select
+          :items="items"
+          placeholder="Masukkan tipe pertanyaan"
           outlined
+          background-color="white"
+          rounded
+          required
           color="#FF5E3C"
-        ></v-file-input>
-        <!-- end of aset gambar -->
-
-        <!-- aset suara -->
-        <v-card-text style="padding: 2px" class="font-weight-bold subtitle-1"
-          >Tambahkan Aset Suara</v-card-text
         >
-        <v-file-input
-          background-color="white"
-          prepend-icon=""
-          class="justify-center"
-          accept="audio/*"
-          prepend-inner-icon="mdi-cloud-upload"
-          placeholder="Upload aset suara ( ekstensi .mp3 / .mp4 ( maks 2 MB )"
-          rounded
-          outlined
-          color="#FF5E3C"
-        ></v-file-input>
-        <!-- end of aset suara -->
-
-        <v-btn
-          width="400"
-          rounded
-          class="white--text white--text text-capitalize py-6 mt-4"
-          color="#FF5E3C"
-          >Unggah Pelajaran</v-btn
+        </v-select>
+        <!-- end of tipe pertanyaan -->
+        <router-link to="/QuizAlfabet/pertanyaan">
+          <v-btn
+            width="400"
+            rounded
+            class="white--text white--text text-capitalize py-6 mt-4"
+            color="#FF5E3C"
+            >Selanjutnya</v-btn
+          ></router-link
         >
       </div>
       <!-- end of form -->
@@ -114,9 +108,11 @@ export default {
 
   components: {},
 
-  data: () => ({
-    item: [],
-  }),
+  data() {
+    return {
+      items: ["Gambar", "Suara", "Text"],
+    };
+  },
 
   methods: {
     back() {

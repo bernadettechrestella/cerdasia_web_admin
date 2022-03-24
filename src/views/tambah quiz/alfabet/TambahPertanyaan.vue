@@ -38,32 +38,17 @@
         <!-- end of left arrow -->
 
         <div class="ml-8">
-          <h2 class="black--text">Tambah Pelajaran</h2>
-          <h3 class="font-weight-regular">Mahir (Suku Kata)</h3>
+          <h2 class="black--text">Tambah Pertanyaan Quiz</h2>
+          <h3 class="font-weight-regular">Pemula (Alfabet)</h3>
         </div>
       </v-row>
       <!-- end of title -->
 
       <!-- form -->
       <div class="mt-8">
-        <!-- level pelajaran -->
+        <!-- tambah pertanyaan -->
         <v-card-text style="padding: 2px" class="font-weight-bold subtitle-1"
-          >Level Pelajaran</v-card-text
-        >
-        <v-text-field
-          placeholder="Masukkan level pelajaran"
-          outlined
-          background-color="white"
-          rounded
-          required
-          color="#FF5E3C"
-        >
-        </v-text-field>
-        <!-- end of level pelajaran -->
-
-        <!-- aset gambar -->
-        <v-card-text style="padding: 2px" class="font-weight-bold subtitle-1"
-          >Tambahkan Aset Gambar</v-card-text
+          >Pertanyaan</v-card-text
         >
         <v-file-input
           background-color="white"
@@ -76,34 +61,16 @@
           outlined
           color="#FF5E3C"
         ></v-file-input>
-        <!-- end of aset gambar -->
-
-        <!-- aset suara -->
-        <v-card-text style="padding: 2px" class="font-weight-bold subtitle-1"
-          >Tambahkan Aset Suara</v-card-text
-        >
-        <v-file-input
-          background-color="white"
-          prepend-icon=""
-          class="justify-center"
-          accept="audio/*"
-          prepend-inner-icon="mdi-cloud-upload"
-          placeholder="Upload aset suara ( ekstensi .mp3 / .mp4 ( maks 2 MB )"
-          rounded
-          outlined
-          color="#FF5E3C"
-        ></v-file-input>
-        <!-- end of aset suara -->
 
         <v-btn
           width="400"
           rounded
           class="white--text white--text text-capitalize py-6 mt-4"
           color="#FF5E3C"
-          >Unggah Pelajaran</v-btn
+          >Tambah Pertanyaan Quiz</v-btn
         >
       </div>
-      <!-- end of form -->
+      <!-- end of tambah pertanyaan -->
     </v-container>
   </v-app>
 </template>
@@ -114,9 +81,11 @@ export default {
 
   components: {},
 
-  data: () => ({
-    item: [],
-  }),
+  data() {
+    return {
+      items: ["Gambar", "Suara", "Text"],
+    };
+  },
 
   methods: {
     back() {

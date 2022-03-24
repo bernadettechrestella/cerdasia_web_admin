@@ -82,7 +82,13 @@ const routes = [
       {
         path: "/QuizAlfabet",
         name: "QuizAlfabet",
-        component: () => import("../views/QuizAlfabet.vue"),
+        component: () => import("../views/tambah quiz/alfabet/QuizAlfabet"),
+      },
+      {
+        path: "/QuizAlfabet/pertanyaan",
+        name: "QuizAlfabet",
+        component: () =>
+          import("../views/tambah quiz/alfabet/TambahPertanyaan"),
       },
       {
         path: "/QuizKalimat",

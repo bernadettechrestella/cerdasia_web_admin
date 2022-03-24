@@ -35,4 +35,8 @@ html {
   color: white !important;
   caret-color: white !important;
 }
+
+.v-application--wrap {
+  background-color: #f9f7f7;
+}
 </style>
