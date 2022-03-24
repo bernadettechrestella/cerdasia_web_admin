@@ -91,6 +91,16 @@ const routes = [
           import("../views/tambah quiz/alfabet/TambahPertanyaan"),
       },
       {
+        path: "/QuizAlfabet/jawaban",
+        name: "QuizAlfabet",
+        component: () => import("../views/tambah quiz/alfabet/JawabanAlfabet"),
+      },
+      {
+        path: "/QuizAlfabet/tambah-jawaban",
+        name: "QuizAlfabet",
+        component: () => import("../views/tambah quiz/alfabet/TambahJawaban"),
+      },
+      {
         path: "/QuizSukuKata",
         name: "QuizSukuKata",
         component: () => import("../views/tambah quiz/suku kata/QuizSukuKata"),
@@ -111,6 +121,7 @@ const routes = [
         name: "QuizKata",
         component: () => import("../views/tambah quiz/kata/TambahPertanyaan"),
       },
+
       {
         path: "/QuizKalimat",
         name: "QuizKalimat",
@@ -121,6 +132,16 @@ const routes = [
         name: "QuizKata",
         component: () =>
           import("../views/tambah quiz/kalimat/TambahPertanyaan"),
+      },
+      {
+        path: "/QuizKalimat/jawaban",
+        name: "QuizKata",
+        component: () => import("../views/tambah quiz/kalimat/JawabanKalimat"),
+      },
+      {
+        path: "/QuizKalimat/tambah-jawaban",
+        name: "QuizKata",
+        component: () => import("../views/tambah quiz/kalimat/TambahJawaban"),
       },
     ],
   },

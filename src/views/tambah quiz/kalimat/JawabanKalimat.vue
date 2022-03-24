@@ -34,7 +34,7 @@
         <!-- end of left arrow -->
         <div class="ml-8">
           <h2 class="black--text">Tambah Jawaban Quiz</h2>
-          <h3 class="font-weight-regular">Pemula (Alfabet)</h3>
+          <h3 class="font-weight-regular">Terampil (Kalimat)</h3>
         </div>
       </v-row>
       <!-- end of title -->
@@ -86,7 +86,7 @@
         >
         </v-select>
         <!-- end of tipe jawaban -->
-        <router-link to="/QuizAlfabet/tambah-jawaban">
+        <router-link to="/QuizKalimat/tambah-jawaban">
           <v-btn
             width="400"
             rounded
