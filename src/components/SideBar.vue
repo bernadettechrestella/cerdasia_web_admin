@@ -130,8 +130,8 @@ export default {
       {
         id: 0,
         type: 2,
-        name: "Suku Kata 1",
-        route: "/LearningSukuKata1",
+        name: "Suku Kata",
+        route: "/LearningSukuKata",
         parentNavigation_Id: 1,
         iconClass: "mdi-message-cog-outline",
         order: 1,
@@ -140,8 +140,8 @@ export default {
       {
         id: 0,
         type: 2,
-        name: "Suku Kata 2",
-        route: "/LearningSukuKata2",
+        name: "Kata",
+        route: "/LearningKata",
         parentNavigation_Id: 1,
         iconClass: "mdi-message-cog-outline",
         order: 1,

@@ -39,7 +39,7 @@
 
         <div class="ml-8">
           <h2 class="black--text">Tambah Pelajaran</h2>
-          <h3 class="font-weight-regular">Terampil (Learning Kalimat)</h3>
+          <h3 class="font-weight-regular">Mahir (Learning Suku Kata)</h3>
         </div>
       </v-row>
       <!-- end of title -->

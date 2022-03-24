@@ -65,14 +65,14 @@ const routes = [
         component: () => import("../views/LearningAlfabet.vue"),
       },
       {
-        path: "/LearningSukuKata1",
-        name: "LearningSukuKata1",
-        component: () => import("../views/LearningSukuKata1.vue"),
+        path: "/LearningSukuKata",
+        name: "LearningSukuKata",
+        component: () => import("../views/LearningSukuKata.vue"),
       },
       {
-        path: "/LearningSukuKata2",
-        name: "LearningSukuKata2",
-        component: () => import("../views/LearningSukuKata2.vue"),
+        path: "/LearningKata",
+        name: "LearningKata",
+        component: () => import("../views/LearningKata.vue"),
       },
       {
         path: "/LearningKalimat",
