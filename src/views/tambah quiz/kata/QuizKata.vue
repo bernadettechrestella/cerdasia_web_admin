@@ -1,10 +1,6 @@
 <template>
-  <v-app>
-    <v-container
-      class="pl-10 pb-10 pr-10 pt-8"
-      fluid
-      style="background-color: #f9f7f7"
-    >
+  <v-app style="background-color: #f9f7f7">
+    <v-container class="pl-10 pb-10 pr-10 pt-8" fluid>
       <!-- title -->
       <v-row class="mx-2 my-4">
         <!-- left arrow -->
@@ -38,38 +34,69 @@
         <!-- end of left arrow -->
         <div class="ml-8">
           <h2 class="black--text">Tambah Pertanyaan Quiz</h2>
-          <h3 class="font-weight-regular">Mahir (Suku Kata)</h3>
+          <h3 class="font-weight-regular">Cakap (Kata)</h3>
         </div>
       </v-row>
       <!-- end of title -->
 
       <!-- form -->
       <div class="mt-8">
-        <!-- tambah pertanyaan -->
+        <!-- id quiz -->
         <v-card-text style="padding: 2px" class="font-weight-bold subtitle-1"
-          >Pertanyaan</v-card-text
+          >ID</v-card-text
         >
-        <v-file-input
-          background-color="white"
-          prepend-icon=""
-          class="justify-center"
-          accept="image/*"
-          prepend-inner-icon="mdi-cloud-upload"
-          placeholder="Upload aset gambar ( ekstensi .jpg / .png maks 2 MB )"
-          rounded
+        <v-text-field
+          placeholder="Masukan ID quiz"
           outlined
-          color="#FF5E3C"
-        ></v-file-input>
-
-        <v-btn
-          width="400"
+          background-color="white"
           rounded
-          class="white--text white--text text-capitalize py-6 mt-4"
+          required
           color="#FF5E3C"
-          >Tambah Pertanyaan Quiz</v-btn
+        >
+        </v-text-field>
+        <!-- end of id quiz -->
+
+        <!-- level pelajaran -->
+        <v-card-text style="padding: 2px" class="font-weight-bold subtitle-1"
+          >Level Pelajaran</v-card-text
+        >
+        <v-text-field
+          placeholder="Masukkan level pelajaran"
+          outlined
+          background-color="white"
+          rounded
+          required
+          color="#FF5E3C"
+        >
+        </v-text-field>
+        <!-- end of level pelajaran -->
+
+        <!-- tipe pertanyaan -->
+        <v-card-text style="padding: 2px" class="font-weight-bold subtitle-1"
+          >Tipe Pertanyaan</v-card-text
+        >
+        <v-select
+          :items="items"
+          placeholder="Masukkan tipe pertanyaan"
+          outlined
+          background-color="white"
+          rounded
+          required
+          color="#FF5E3C"
+        >
+        </v-select>
+        <!-- end of tipe pertanyaan -->
+        <router-link to="/QuizKata/pertanyaan">
+          <v-btn
+            width="400"
+            rounded
+            class="white--text white--text text-capitalize py-6 mt-4"
+            color="#FF5E3C"
+            >Selanjutnya</v-btn
+          ></router-link
         >
       </div>
-      <!-- end of tambah pertanyaan -->
+      <!-- end of form -->
     </v-container>
   </v-app>
 </template>

@@ -101,6 +101,27 @@ const routes = [
         component: () =>
           import("../views/tambah quiz/suku kata/TambahPertanyaan"),
       },
+      {
+        path: "/QuizKata",
+        name: "QuizKata",
+        component: () => import("../views/tambah quiz/kata/QuizKata"),
+      },
+      {
+        path: "/QuizKata/pertanyaan",
+        name: "QuizKata",
+        component: () => import("../views/tambah quiz/kata/TambahPertanyaan"),
+      },
+      {
+        path: "/QuizKalimat",
+        name: "QuizKalimat",
+        component: () => import("../views/tambah quiz/kalimat/QuizKalimat"),
+      },
+      {
+        path: "/QuizKalimat/pertanyaan",
+        name: "QuizKata",
+        component: () =>
+          import("../views/tambah quiz/kalimat/TambahPertanyaan"),
+      },
     ],
   },
   {

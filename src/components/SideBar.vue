@@ -177,7 +177,16 @@ export default {
         order: 1,
         visible: 1,
       },
-
+      {
+        id: 0,
+        type: 2,
+        name: "Kata",
+        route: "/QuizKata",
+        parentNavigation_Id: 2,
+        iconClass: "mdi-message-cog-outline",
+        order: 1,
+        visible: 1,
+      },
       {
         id: 0,
         type: 2,
