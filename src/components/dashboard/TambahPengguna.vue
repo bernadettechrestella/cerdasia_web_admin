@@ -14,7 +14,8 @@
           rounded
           required
           color="#FF5E3C"
-        ></v-text-field>
+        >
+        </v-text-field>
       </v-col>
       <!-- end of input nama lengkap -->
       <!-- input email -->
@@ -65,7 +66,8 @@
           required
           type="password"
           color="#FF5E3C"
-        ></v-text-field>
+        >
+        </v-text-field>
       </v-col>
       <!-- end of input Password -->
     </v-row>
